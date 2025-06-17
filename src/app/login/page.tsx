@@ -1,105 +1,108 @@
 export default function LoginPage() {
   return (
-    <div style={{ backgroundColor: "#f9fafb", minHeight: "100vh" }}>
-      {/* HEADER */}
-      <header style={{
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
-        padding: "1.5rem 2rem",
-        maxWidth: "1200px",
-        margin: "0 auto"
-      }}>
-        <div style={{ fontWeight: "bold", color: "#ccc", fontSize: "1rem" }}>MeinLogo</div>
-        <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
-          <button style={{
-            backgroundColor: "transparent",
-            border: "none",
-            fontSize: "1rem",
-            color: "#000",
-            cursor: "pointer"
-          }}>
-            Login
-          </button>
-          <button style={{
-            backgroundColor: "#0070f3",
-            color: "#fff",
-            fontWeight: "bold",
-            padding: "0.75rem 1.5rem",
-            fontSize: "1rem",
-            borderRadius: "10px",
-            border: "none",
-            cursor: "pointer"
-          }}>
+    <main
+      style={{
+        fontFamily: 'sans-serif',
+        backgroundColor: '#f9fbfd',
+        minHeight: '100vh',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'space-between',
+        padding: '2rem 4rem',
+      }}
+    >
+      {/* Header */}
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+        }}
+      >
+        <div style={{ fontWeight: 'bold', color: '#ccc' }}>MeinLogo</div>
+        <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
+          <span style={{ fontWeight: '500' }}>Login</span>
+          <button
+            style={{
+              backgroundColor: '#0070f3',
+              color: '#fff',
+              border: 'none',
+              borderRadius: '8px',
+              padding: '0.6rem 1.2rem',
+              fontWeight: 'bold',
+              cursor: 'pointer',
+            }}
+          >
             Kostenlos testen
           </button>
         </div>
-      </header>
+      </div>
 
-      {/* MAIN CONTENT */}
-      <main style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        textAlign: "center",
-        padding: "6rem 2rem"
-      }}>
-        <h1 style={{
-          fontSize: "3rem",
-          fontWeight: 800,
-          lineHeight: 1.2,
-          maxWidth: "800px"
-        }}>
-          Verdopple dein Business mit <br />
-          Perspective Funnels™
+      {/* Main Content */}
+      <div
+        style={{
+          textAlign: 'center',
+          maxWidth: '800px',
+          margin: '0 auto',
+          paddingTop: '2rem',
+        }}
+      >
+        <h1
+          style={{
+            fontSize: '3rem',
+            fontWeight: 'bold',
+            marginBottom: '1rem',
+            color: '#000',
+            lineHeight: '1.2',
+          }}
+        >
+          Verdopple dein Business mit <br /> Perspective Funnels™
         </h1>
-
-        <p style={{
-          fontSize: "1.125rem",
-          color: "#444",
-          maxWidth: "600px",
-          marginTop: "1.5rem"
-        }}>
-          Erstelle mobil-optimierte, interaktive Recruiting- & Neukunden-Funnels mit führenden Ergebnissen – in nur 30 Minuten. Ganz ohne Design- oder Programmierkenntnisse.
+        <p
+          style={{
+            fontSize: '1.1rem',
+            color: '#333',
+            marginBottom: '2rem',
+          }}
+        >
+          Erstelle mobil-optimierte, interaktive Recruiting- & Neukunden-Funnels mit führenden Ergebnissen –
+          in nur 30 Minuten. Ganz ohne Design- oder Programmierkenntnisse.
         </p>
-
-        <div style={{
-          display: "flex",
-          gap: "1rem",
-          marginTop: "2rem",
-          flexWrap: "wrap",
-          justifyContent: "center"
-        }}>
-          <button style={{
-            backgroundColor: "#0070f3",
-            color: "#fff",
-            fontWeight: "bold",
-            padding: "1rem 2rem",
-            fontSize: "1rem",
-            borderRadius: "10px",
-            border: "none",
-            cursor: "pointer"
-          }}>
+        <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem' }}>
+          <button
+            style={{
+              backgroundColor: '#0070f3',
+              color: '#fff',
+              padding: '0.75rem 1.5rem',
+              borderRadius: '8px',
+              border: 'none',
+              fontWeight: 'bold',
+              fontSize: '0.95rem',
+              cursor: 'pointer',
+            }}
+          >
             Baue kostenlos Funnel in 30 min
           </button>
-
-          <button style={{
-            backgroundColor: "#fff",
-            color: "#0070f3",
-            fontWeight: "bold",
-            padding: "1rem 2rem",
-            fontSize: "1rem",
-            borderRadius: "10px",
-            border: "1px solid #0070f3",
-            cursor: "pointer"
-          }}>
+          <button
+            style={{
+              backgroundColor: '#fff',
+              color: '#0070f3',
+              padding: '0.75rem 1.5rem',
+              borderRadius: '8px',
+              border: '1px solid #0070f3',
+              fontWeight: 'bold',
+              fontSize: '0.95rem',
+              cursor: 'pointer',
+            }}
+          >
             Demo ansehen
           </button>
         </div>
-      </main>
-    </div>
+      </div>
+
+      {/* Footer Spacer */}
+      <div />
+    </main>
   );
 }
-
 
