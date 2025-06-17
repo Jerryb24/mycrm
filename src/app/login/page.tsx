@@ -1,20 +1,47 @@
 export default function LoginPage() {
   return (
-    <main style={{ padding: "2rem", fontFamily: "sans-serif", textAlign: "center" }}>
-      <header style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+    <main style={{
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      justifyContent: "center",
+      minHeight: "100vh",
+      backgroundColor: "#ffffff",
+      fontFamily: "sans-serif",
+      padding: "2rem"
+    }}>
+      <header style={{
+        width: "100%",
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+        marginBottom: "4rem"
+      }}>
         <div style={{ fontWeight: "bold", fontSize: "1.5rem" }}>MeinLogo</div>
-        <nav>
-          <button style={{ marginRight: "1rem" }}>Login</button>
-          <button style={{ backgroundColor: "#0070f3", color: "#fff", padding: "0.5rem 1rem", borderRadius: "4px" }}>
+        <div style={{ display: "flex", gap: "1rem" }}>
+          <button style={{ background: "none", border: "none", fontSize: "1rem" }}>
+            Login
+          </button>
+          <button style={{
+            backgroundColor: "#0070f3",
+            color: "white",
+            border: "none",
+            borderRadius: "6px",
+            padding: "0.75rem 1.5rem",
+            fontSize: "1rem",
+            cursor: "pointer"
+          }}>
             Kostenlos testen
           </button>
-        </nav>
+        </div>
       </header>
 
-      <section style={{ marginTop: "5rem" }}>
-        <h1 style={{ fontSize: "2.5rem" }}>Willkommen bei meiner CRM-Lösung</h1>
-        <p style={{ marginTop: "1rem", fontSize: "1.2rem" }}>
-          Erstelle interaktive Seiten mit einem cleanen, modernen Design.
+      <section style={{ textAlign: "center", maxWidth: "700px" }}>
+        <h1 style={{ fontSize: "2.5rem", marginBottom: "1rem" }}>
+          Verdopple dein Business mit deiner CRM-Lösung
+        </h1>
+        <p style={{ fontSize: "1.125rem", color: "#444" }}>
+          Erstelle mobil-optimierte, interaktive Tools mit führenden Ergebnissen – in nur 30 Minuten. Ohne Programmierkenntnisse.
         </p>
       </section>
     </main>
