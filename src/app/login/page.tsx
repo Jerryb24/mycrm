@@ -43,7 +43,9 @@ export default function LoginPage() {
           fontSize: '3rem',
           fontWeight: 'bold',
           marginBottom: '1rem'
-        }}>Verdopple dein Business mit deiner CRM-Lösung</h1>
+<h1 style={{ fontSize: "2.5rem", color: "#000" }}>
+  Verdopple dein Business mit deiner CRM-Lösung
+</h1>
         <p style={{
           fontSize: '1.1rem',
           color: '#444',
