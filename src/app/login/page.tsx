@@ -39,7 +39,7 @@ export default function LoginPage() {
             backgroundColor: "white",
             border: "1px solid #ccc",
             borderRadius: "8px",
-            fontWeight: "500",
+            fontWeight: "600", // Jetzt identisch zu den anderen Buttons
             color: "#666",
             cursor: "pointer",
           }}
@@ -125,6 +125,3 @@ export default function LoginPage() {
     </main>
   );
 }
-
-
-
