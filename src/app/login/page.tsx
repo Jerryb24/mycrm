@@ -1,95 +1,76 @@
 export default function LoginPage() {
   return (
     <main style={{
-      fontFamily: "sans-serif",
-      backgroundColor: "#ffffff",
-      color: "#000000",
-      minHeight: "100vh",
-      padding: "2rem",
-      display: "flex",
-      flexDirection: "column"
+      fontFamily: 'sans-serif',
+      padding: '2rem 4rem',
+      backgroundColor: '#fff',
+      color: '#111',
+      minHeight: '100vh',
     }}>
-      {/* Header */}
       <header style={{
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
-        marginBottom: "4rem"
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        marginBottom: '4rem'
       }}>
-        <div style={{ fontWeight: "bold", fontSize: "1.2rem" }}>MeinLogo</div>
+        <div style={{ fontWeight: 'bold', fontSize: '1.2rem' }}>MeinLogo</div>
         <div>
           <button style={{
-            marginRight: "1rem",
-            padding: "0.6rem 1.2rem",
-            borderRadius: "6px",
-            border: "1px solid #ccc",
-            backgroundColor: "#fff",
-            color: "#333",
-            fontSize: "0.9rem",
-            cursor: "pointer"
-          }}>
-            Login
-          </button>
+            marginRight: '1rem',
+            border: '1px solid #ccc',
+            backgroundColor: '#fff',
+            padding: '0.6rem 1.2rem',
+            borderRadius: '8px',
+            cursor: 'pointer'
+          }}>Login</button>
           <button style={{
-            padding: "0.6rem 1.2rem",
-            borderRadius: "6px",
-            backgroundColor: "#0070f3",
-            color: "#fff",
-            fontSize: "0.9rem",
-            border: "none",
-            cursor: "pointer"
-          }}>
-            Kostenlos testen
-          </button>
+            backgroundColor: '#0070f3',
+            color: '#fff',
+            padding: '0.6rem 1.2rem',
+            borderRadius: '8px',
+            border: 'none',
+            cursor: 'pointer'
+          }}>Kostenlos testen</button>
         </div>
       </header>
 
-      {/* Centered Section */}
       <section style={{
-        flexGrow: 1,
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        textAlign: "center"
+        textAlign: 'center',
+        maxWidth: '800px',
+        margin: '0 auto'
       }}>
         <h1 style={{
-          fontSize: "3rem",
-          fontWeight: "bold",
-          marginBottom: "1rem",
-          maxWidth: "700px"
-        }}>
-          Verdopple dein Business mit deiner CRM-Lösung
-        </h1>
+          fontSize: '3rem',
+          fontWeight: 'bold',
+          marginBottom: '1rem'
+        }}>Verdopple dein Business mit deiner CRM-Lösung</h1>
         <p style={{
-          fontSize: "1.1rem",
-          maxWidth: "500px",
-          marginBottom: "2rem"
+          fontSize: '1.1rem',
+          color: '#444',
+          marginBottom: '2.5rem'
         }}>
           Erstelle mobil-optimierte, interaktive Tools mit führenden Ergebnissen – in nur 30 Minuten. Ohne Programmierkenntnisse.
         </p>
-
-        <div>
+        <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem' }}>
           <button style={{
-            padding: "0.8rem 1.5rem",
-            marginRight: "1rem",
-            borderRadius: "6px",
-            backgroundColor: "#0070f3",
-            color: "#fff",
-            fontSize: "1rem",
-            border: "none",
-            cursor: "pointer"
+            backgroundColor: '#0070f3',
+            color: '#fff',
+            padding: '1rem 2rem',
+            borderRadius: '8px',
+            border: 'none',
+            fontWeight: 'bold',
+            cursor: 'pointer'
           }}>
-            Baue kostenlos Funnel in 30 min
+            Baue kostenlos Funnel in 30 min
           </button>
           <button style={{
-            padding: "0.8rem 1.5rem",
-            borderRadius: "6px",
-            backgroundColor: "#fff",
-            color: "#0070f3",
-            fontSize: "1rem",
-            border: "1px solid #0070f3",
-            cursor: "pointer"
+            backgroundColor: '#fff',
+            color: '#0070f3',
+            padding: '1rem 2rem',
+            borderRadius: '8px',
+            border: '1px solid #0070f3',
+            fontWeight: 'bold',
+            cursor: 'pointer'
           }}>
             Demo ansehen
           </button>
